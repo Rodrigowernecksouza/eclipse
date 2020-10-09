@@ -1,45 +1,51 @@
 package dominio;
 
 public class massa {
-	private float massaInicial;
-	private float massaFinal;
-	private int tempo;
-	
-	public massa(float massaInicial, float massaFinal, int tempo) {
-		super();
-		this.massaInicial = massaInicial;
-		this.massaFinal = massaFinal;
-		this.tempo = tempo;
-	}
+    private float massaInicial;
+    private float massaFinal;
+    private int tempo;
 
-	public float getMassaInicial() {
-		return massaInicial;
-	}
+    public massa(float massaInicial, float massaFinal, int tempo) {
+        super();
+        this.massaInicial = massaInicial;
+        this.massaFinal = massaFinal;
+        this.tempo = tempo;
+    }
 
-	public void setMassaInicial(float massaInicial) {
-		this.massaInicial = massaInicial;
-	}
+    public float getMassaInicial() {
+        return massaInicial;
+    }
 
-	public float getMassaFinal() {
-		return massaFinal;
-	}
+    public void setMassaInicial(float massaInicial) {
+        this.massaInicial = massaInicial;
+    }
 
-	public void setMassaFinal(float massaFinal) {
-		this.massaFinal = massaFinal;
-	}
+    public float getMassaFinal() {
+        return massaFinal;
+    }
 
-	public int getTempo() {
-		return tempo;
-	}
+    public void setMassaFinal(float massaFinal) {
+        this.massaFinal = massaFinal;
+    }
 
-	public void setTempo(int tempo) {
-		this.tempo = tempo;
-	}
-	
-	
-	public void calculaTempo() {
-		
-	}
+    public int getTempo() {
+        return tempo;
+    }
+
+    public void setTempo(int tempo) {
+        this.tempo = tempo;
+    }
+
+
+    public void calculaTempo() {
+       massaFinal = massaInicial;
+       while (massaFinal >= 0.5) { 
+            massaFinal/=2; // massaFinal = massaFinal /2
+            tempo += 50;  // tempo = tempo + 50}
+       }
+    }
+   }	
+{
 	int main()	
     {
     	int meiaVida = 0;
